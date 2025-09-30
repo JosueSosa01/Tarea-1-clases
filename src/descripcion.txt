@@ -1,0 +1,48 @@
+Pilas java
+Librerias usadas:
+java.util.Stack - Implementa una pila (LIFO), con métodos como push, pop, peek y search.
+
+En este se crearon 2 casos de prueba
+
+1er caso. Enteros: se verifica si la pila esta vacia o no, que hasta el momento no esta creada, posteriormente se insertan
+5 enteros (1,2,3,4,5), posteriormente se utiliza pop para eliminar 3 numeros, por regla de este metodo
+los ultimos en entrar son los primeros que salen, en ese sentido hace que se eliminen el 5,4,3 en ese mismo orden.
+Se comprueba si el 3 esta dentro pero al haber hecho 3 pop entonces marca false al no existir.
+Por ultimo con el metodo peek se verifica cual es el ultimo numero agregado al momento el cual deberia de ser 2.
+
+2do caso. Strings: Se insertan letras individuales formando el nombre de JOSUE, estos se imprimen y se consulta si la pila esta
+vacia lo cual marca false al estar con strings, se usa el metodo peek para ver cual es la ultima letra que se introdujo, en este caso fue la "E"
+Con el metodo search se busca si hay una "B" el cual es false ya que JOSUE no lleva B, Preguntamos por E y efectivsmente existe.
+Que pasa si borramos un string con pop?, verificamos que exista la "E" de nuevo y efectivamente ya no existe.
+
+
+Queue java
+Librerias usadas:
+java.util.Queue - Interfaz para colas (FIFO), usada junto con LinkedList para encolar y desencolar elementos.
+java.util.LinkedList - Estructura de lista doblemente enlazada que implementa Queue, permitiendo usar métodos como add, remove y peek.
+En este se crearon 2 casos de prueba
+
+1er caso: Se agregaron elementos de tipo string los cuales son [A,B,C,G], se imprime y con el metodo peek obtenemos el primer elemento sin eliminarse
+el cual es "A".
+
+2do caso: Este es mas complejo ya que eliminamos con pop pero ahora se elimina el primero que entro por ende se elimina "A", se verifica que sea 
+asi con el metodo peek y efectivamente solo aparece como primer elemento "B" y la cola seria [B,C,G].
+
+
+Hash java
+Librerias usadas:
+java.util.HashMap - Implementa una tabla hash, que guarda pares clave→valor con operaciones rápidas de inserción, búsqueda y eliminación.
+En este se hicieron 3 pruebas
+
+1er caso: Se declaran 4 valores pares que son Ids con sus respectivos nombres y se imprime el contenido del Hashmap, verificamos con el metodo containsValue si 
+el valor "14112729" existe o no y efectivamente existe. Consultamos el valor o Id de Carlos con el metodo get.
+
+2do caso: En este se reemplaza el id de carlos por otro, pasaria de 1211543 a 1311536, esto se logra con el metodo put y de ahi se imprime de nuevo el hashmap, de esta
+manera observamos que el cambio ha sido hecho.
+
+3er caso: Este caso simplemente eliminamos a Martha y su Id del hashmap con el metodo remove y posteriormente se imprime de nuevo el mapa para visualizar que 
+efectivamente Martha ya no esta.
+
+
+Para la elaboracion de esta actividad no se utilizo ninguna herramienta de IA, pero se requirio de un estudio, especificamente guias de YouTube ya que Java es un 
+lenguaje de programacion que no domino y es algo que quiero ponerme a prueba.
